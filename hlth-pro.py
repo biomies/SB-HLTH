@@ -27,27 +27,27 @@ from googletrans import Translator
 import youtube_dl
 #import pyimgflip
 
-cl = LineClient(authToken='EPyUFwJIWBNgMJ1fWmD4.ieuTkNSNO1nUexlKYncOTa.PIj2TuOW8qu9kgCy1LJoniXfaUlArsrIFhwFiPX+GIU=')
+cl = LineClient(authToken='EPNVXGDgOt75nPMfoNn4.ieuTkNSNO1nUexlKYncOTa.E/OU6ft637MjW0G2bizuUFQEt8aolX/3mpJ7vyvAvJU=')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient(authToken='EPIlKpvXCoc1h1v6uisc.TESw9XwyDXtonNiO+962Fa.+Pb7lh+g8VNUGYAuUu4IbDlFxi5uLDvwu9f/CnaYq90=')
+ki = LineClient(authToken='EPS2HtyY0XfWiRfCRnUc.TESw9XwyDXtonNiO+962Fa.J1Qk09HjqWgafMdjUtqf94j3bSOzFYfh4gZsgywONZY=')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki,ki.server.CHANNEL_ID['LINE_TIMELINE'])
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient(authToken='EPPqEJpKdrZuCVmvy2b4.UmtT72AAjxAbaJPpAyjUDa.ZDvcO4kAqydbaJtmcHJkmFDwICLFnTit2SJWK5tf+1U=')
+kk = LineClient(authToken='EPCKnKNAYS7rwjQzVxm4.UmtT72AAjxAbaJPpAyjUDa.DkTS+Isl8xDAKD405BFboVGjelCamabsTCThE9Yrnpo=')
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk,kk.server.CHANNEL_ID['LINE_TIMELINE'])
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient(authToken='EPCPYFQ8hSZM7P4fMetf.yd07SCrosHZlbkZ5EG7SBW.WUoTflvRCbhy7thfsPKKjHUI2SE/irwxikmESh94W44=')
+kc = LineClient(authToken='EP58C75EsjJRWBLfxn6f.yd07SCrosHZlbkZ5EG7SBW.2YYkWv2oCgG9DRCVvThIUQXsZT30zkM5mg/A446MEGk=')
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc,kc.server.CHANNEL_ID['LINE_TIMELINE'])
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-sw = LineClient(authToken='EPxDdtqIlM2qWzsIJye9.VqnJFpeCW23M8W1v0Ni2wq.berj/lJbIg6SMkEMY3FXgmLz78ZKSUCt0PT7z4XJ6NU=')
+sw = LineClient(authToken='EPGcgrBGqOTJTJsH0F49.VqnJFpeCW23M8W1v0Ni2wq.H8qmEHuL2d718juQCFHQKvKb/Fti/QGWkJ4hPt2zO1E=')
 sw.log("Auth Token : " + str(sw.authToken))
 channel4 = LineChannel(sw,sw.server.CHANNEL_ID['LINE_TIMELINE'])
 sw.log("Channel Access Token : " + str(channel4.channelAccessToken))
