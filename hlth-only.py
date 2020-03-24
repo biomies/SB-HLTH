@@ -2,12 +2,17 @@
 import HELLTERHEAD
 from HELLTERHEAD import *
 from selfbot.ttypes import *
+from akad.ttypes import *
 from thrift.unverting import *
 from thrift.TMultiplexedProcessor import *
 from thrift.TSerialization import *
 from thrift.TRecursive import *
 from thrift import transport, protocol, server
 from multiprocessing import Pool, Process
+from akad.ttypes import ContentType as Type
+from akad.ttypes import ChatRoomAnnouncementContents
+from akad.ttypes import Location
+from akad.ttypes import ChatRoomAnnouncement
 from humanfriendly import format_timespan, format_size, format_number, format_length
 from time import sleep
 import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib.request, urllib.parse, urllib.error, urllib.parse
