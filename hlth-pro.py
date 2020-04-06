@@ -200,8 +200,8 @@ wait = {
     "selfbot": True,
     "Images": {},
     "Img": {},
-    "Addimage": {"name": "", "status": False},
     "Videos": {},
+    "Addimage": {"name": "", "status": False},
     "Addaudio": {"name": "", "status": False},
     "Addvideo": {"name": "", "status": False},
     "myProfile": {
@@ -381,7 +381,6 @@ def waktu(secs):
     mins, secs = divmod(secs, 60)
     hours, mins = divmod(mins, 60)
     days, hours = divmod(hours, 24)
-    weeks, days = divmod(days, 7)
     return "%00d Hari %00d Jam %00d Menit %00d Detik" % (days, hours, mins, secs)
 
 
@@ -389,7 +388,6 @@ def runtime(secs):
     mins, secs = divmod(secs, 60)
     hours, mins = divmod(mins, 60)
     days, hours = divmod(hours, 24)
-    weeks, days = divmod(days, 7)
     return "%00d Hari %00d Jam %00d Menit %00d Detik" % (days, hours, mins, secs)
 
 
@@ -397,13 +395,12 @@ def speedtest(secs):
     mins, secs = divmod(secs, 60)
     hours, mins = divmod(mins, 60)
     days, hours = divmod(hours, 24)
-    weeks, days = divmod(days, 7)
     if days == 0:
-        return "%02d" % (secs)
+        return "%00d" % (secs)
     elif days > 0 and weaks == 0:
-        return "%02d" % (secs)
+        return "%00d" % (secs)
     elif days > 0 and weaks > 0:
-        return "%02d" % (secs)
+        return "%00d" % (secs)
 
 
 def sendImage(to, path, name="image"):
