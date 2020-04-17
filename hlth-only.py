@@ -27,7 +27,7 @@ from googletrans import Translator
 import youtube_dl
 #import pyimgflip
 
-cl = LineClient(authToken='EP2TxBjBylOEwvwm09Y1.bsRdvtIUbnw8QMv6h3aC0q.XPWTWAm83qfMpBao5od+jx1tTI0G6gwe9/pZf08hs5o=')
+cl = LineClient(authToken='')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
@@ -35,10 +35,10 @@ print("\n\n𐀀 HELLTERHEAD IS READY❗\n\n")
 
 poll = LinePoll(cl)
 call = cl
-creator = ["u20452d2a7b27a3536e1172e4c8d0a8b4"]
-owner = ["u20452d2a7b27a3536e1172e4c8d0a8b4"]
-admin = ["u052ac35538ae04d5bcaa657a1f701cd1"]
-staff = ["u052ac35538ae04d5bcaa657a1f701cd1"]
+creator = [""]
+owner = [""]
+admin = [""]
+staff = [""]
 lineProfile = cl.getProfile()
 mid = cl.getProfile().mid
 KAC = [cl]
