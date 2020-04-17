@@ -27,7 +27,7 @@ import pafy
 from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
-import pyimgflip
+#import pyimgflip
 
 cl = LineClient(authToken='')
 cl.log("Auth Token : " + str(cl.authToken))
