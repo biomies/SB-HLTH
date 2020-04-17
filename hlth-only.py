@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import HELLTERHEAD
 from HELLTERHEAD import *
+from HELLTERHEAD import pyimgflip
 from selfbot.ttypes import *
 from akad.ttypes import *
 from thrift.unverting import *
@@ -22,10 +23,11 @@ from gtts import gTTS
 import html5lib,shutil
 import wikipedia,goslate
 import ffmpy
+import pafy
 from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
-#import pyimgflip
+import pyimgflip
 
 cl = LineClient(authToken='')
 cl.log("Auth Token : " + str(cl.authToken))
