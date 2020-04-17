@@ -23,7 +23,7 @@ from gtts import gTTS
 import html5lib,shutil
 import wikipedia,goslate
 import ffmpy
-import pafy
+from pafy import pafy
 from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
