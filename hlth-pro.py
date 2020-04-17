@@ -4,7 +4,7 @@ from HELLTERHEAD import pyimgflip
 import youtube_dl
 from googletrans import Translator
 from bs4 import BeautifulSoup
-import pafy
+from pafy import pafy
 import ffmpy
 import goslate
 import wikipedia
