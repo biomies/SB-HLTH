@@ -132,7 +132,7 @@ settings = {
     "groupPicture": False,
     "changePicture": False,
     "autoJoinTicket": False,
-    # "restartPoint": null,
+    "restartPoint": True,
     "userMention": {},
     "timeRestart": {},
     "server": {},
@@ -190,6 +190,7 @@ wait = {
     "autoJoin": True,
     "autoAdd": False,
     "autoBlock": False,
+    "autoRead": True,
     "Timeline": False,
     "autoLeave": False,
     "autoLeave1": False,
@@ -227,7 +228,11 @@ read = {
     "ROM": {},
 }
 
-cctv = {"cyduk": {}, "point": {}, "sidermem": {}}
+cctv = {
+    "cyduk": {},
+    "point": {},
+    "sidermem": {}
+}
 
 coverId = {}
 
@@ -5534,7 +5539,10 @@ def bot(op):
                                 if msg._from in admin:
                                     group = cl.getGroup(msg.to)
                                     nama = [contact.mid for contact in group.members]
-                                    nm1, nm2, nm3, nm4, nm5, nm6, nm7, jml = (
+                                    nm1, nm2, nm3, nm4, nm5, nm6, nm7, nm8, nm9, nm10, jml = (
+                                        [],
+                                        [],
+                                        [],
                                         [],
                                         [],
                                         [],
@@ -5550,7 +5558,7 @@ def bot(op):
                                         for i in range(0, 20):
                                             nm1 += [nama[i]]
                                         mentionMembers(msg.to, nm1)
-                                        for j in range(20, len(nama) - 1):
+                                        for j in range(20, 40):
                                             nm2 += [nama[j]]
                                         mentionMembers(msg.to, nm2)
                                     if jml > 40 and jml < 60:
@@ -5560,7 +5568,7 @@ def bot(op):
                                         for j in range(20, 40):
                                             nm2 += [nama[j]]
                                         mentionMembers(msg.to, nm2)
-                                        for k in range(40, len(nama) - 1):
+                                        for k in range(40, 60):
                                             nm3 += [nama[k]]
                                         mentionMembers(msg.to, nm3)
                                     if jml > 60 and jml < 80:
@@ -5573,7 +5581,7 @@ def bot(op):
                                         for k in range(40, 60):
                                             nm3 += [nama[k]]
                                         mentionMembers(msg.to, nm3)
-                                        for l in range(60, len(nama) - 1):
+                                        for l in range(60, 80):
                                             nm4 += [nama[l]]
                                         mentionMembers(msg.to, nm4)
                                     if jml > 80 and jml < 100:
@@ -5589,7 +5597,7 @@ def bot(op):
                                         for l in range(60, 80):
                                             nm4 += [nama[l]]
                                         mentionMembers(msg.to, nm4)
-                                        for m in range(80, len(nama) - 1):
+                                        for m in range(80, 100):
                                             nm5 += [nama[m]]
                                         mentionMembers(msg.to, nm5)
                                     if jml > 100 and jml < 120:
@@ -5608,7 +5616,7 @@ def bot(op):
                                         for m in range(80, 100):
                                             nm5 += [nama[m]]
                                         mentionMembers(msg.to, nm5)
-                                        for n in range(100, len(nama) - 1):
+                                        for n in range(100, 120):
                                             nm6 += [nama[n]]
                                         mentionMembers(msg.to, nm6)
                                     if jml > 120 and jml < 140:
@@ -5630,7 +5638,7 @@ def bot(op):
                                         for n in range(100, 120):
                                             nm6 += [nama[n]]
                                         mentionMembers(msg.to, nm6)
-                                        for o in range(120, len(nama) - 1):
+                                        for o in range(120, 140):
                                             nm7 += [nama[o]]
                                         mentionMembers(msg.to, nm7)
                                     if jml > 140 and jml < 160:
@@ -5655,9 +5663,68 @@ def bot(op):
                                         for o in range(120, 140):
                                             nm7 += [nama[o]]
                                         mentionMembers(msg.to, nm7)
-                                        for p in range(140, len(nama) - 1):
+                                        for p in range(140, 160):
                                             nm8 += [nama[p]]
                                         mentionMembers(msg.to, nm8)
+                                    if jml > 160 and jml < 180:
+                                        for i in range(0, 20):
+                                            nm1 += [nama[i]]
+                                        mentionMembers(msg.to, nm1)
+                                        for j in range(20, 40):
+                                            nm2 += [nama[j]]
+                                        mentionMembers(msg.to, nm2)
+                                        for k in range(40, 60):
+                                            nm3 += [nama[k]]
+                                        mentionMembers(msg.to, nm3)
+                                        for l in range(60, 80):
+                                            nm4 += [nama[l]]
+                                        mentionMembers(msg.to, nm4)
+                                        for m in range(80, 100):
+                                            nm5 += [nama[m]]
+                                        mentionMembers(msg.to, nm5)
+                                        for n in range(100, 120):
+                                            nm6 += [nama[n]]
+                                        mentionMembers(msg.to, nm6)
+                                        for o in range(120, 140):
+                                            nm7 += [nama[o]]
+                                        mentionMembers(msg.to, nm7)
+                                        for p in range(140, 160):
+                                            nm8 += [nama[p]]
+                                        mentionMembers(msg.to, nm8)
+                                        for q in range(160, 180):
+                                            nm9 += [nama[q]]
+                                        mentionMembers(msg.to, nm9)
+                                    if jml > 180 and jml < 200:
+                                        for i in range(0, 20):
+                                            nm1 += [nama[i]]
+                                        mentionMembers(msg.to, nm1)
+                                        for j in range(20, 40):
+                                            nm2 += [nama[j]]
+                                        mentionMembers(msg.to, nm2)
+                                        for k in range(40, 60):
+                                            nm3 += [nama[k]]
+                                        mentionMembers(msg.to, nm3)
+                                        for l in range(60, 80):
+                                            nm4 += [nama[l]]
+                                        mentionMembers(msg.to, nm4)
+                                        for m in range(80, 100):
+                                            nm5 += [nama[m]]
+                                        mentionMembers(msg.to, nm5)
+                                        for n in range(100, 120):
+                                            nm6 += [nama[n]]
+                                        mentionMembers(msg.to, nm6)
+                                        for o in range(120, 140):
+                                            nm7 += [nama[o]]
+                                        mentionMembers(msg.to, nm7)
+                                        for p in range(140, 160):
+                                            nm8 += [nama[p]]
+                                        mentionMembers(msg.to, nm8)
+                                        for q in range(160, 180):
+                                            nm9 += [nama[q]]
+                                        mentionMembers(msg.to, nm9)
+                                        for r in range(180, 200):
+                                            nm10 += [nama[r]]
+                                        mentionMembers(msg.to, nm10)
 
                         # KICK ALL
                         elif "!bye" in msg.text:
